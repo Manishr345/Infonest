@@ -1,0 +1,58 @@
+{
+"status": "ok",
+"totalResults": 5286,
+"articles": [
+{
+"source": {
+"id": "wired",
+"name": "Wired"
+},
+"author": "Joel Khalili",
+"title": "The World’s Biggest Bitcoin Mine Is Rattling This Texas Oil Town",
+"description": "A cash-strapped city in rural Texas will soon be home to the world’s largest bitcoin mine. Local protesters are “raising hell.”",
+"url": "https://www.wired.com/story/the-worlds-biggest-bitcoin-mine-is-rattling-this-texas-oil-town/",
+"urlToImage": "https://media.wired.com/photos/66c5ecc5724cee849e3104da/191:100/w_1280,c_limit/WIRED_BTC_EC_B-Elena-Chudoba.jpg",
+"publishedAt": "2024-09-11T10:00:00Z",
+"content": "The previous October, Sawicky organized a weeklong protest alongside environmental activist group Greenpeace and brandished various anti-bitcoin signs at anyone who entered the Riot facility. Only a … [+3641 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "Gizmodo.com"
+},
+"author": "Passant Rabie",
+"title": "Crypto Bro Charters Private SpaceX Mission to Earth’s Poles",
+"description": "Fram2 could fly as early as this year, marking SpaceX's seventh private crew of astronauts.",
+"url": "https://gizmodo.com/crypto-bro-charters-private-spacex-mission-to-earths-poles-2000486329",
+"urlToImage": "https://gizmodo.com/app/uploads/2024/08/SpaceX-Private-Mission.jpeg",
+"publishedAt": "2024-08-13T16:05:37Z",
+"content": "A private crew of astronauts that includes a cinematographer and an explorer, and commanded by a wealthy bitcoin entrepreneur, will be the first human spaceflight to go over Earth’s polar region.\r\nSp… [+2136 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "Yahoo Entertainment"
+},
+"author": "Jeremy Gan",
+"title": "Proton Drive now has a tier for business users",
+"description": "Proton Drive from Swiss technology company Proton AG now has a Professional tier. It joins services like Proton Mail, Proton VPN, and Proton Pass to receive professional tiers, letting teams select a single individual product that they need rather than signin…",
+"url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_21a908a3-4282-421e-b244-52b23957d2d3",
+"urlToImage": null,
+"publishedAt": "2024-08-27T14:30:09Z",
+"content": "If you click 'Accept all', we and our partners, including 237 who are part of the IAB Transparency &amp; Consent Framework, will also store and/or access information on a device (in other words, use … [+678 chars]"
+},
+{
+"source": {
+"id": "business-insider",
+"name": "Business Insider"
+},
+"author": "kcloonan@insider.com (Kelly Cloonan)",
+"title": "The number of bitcoin millionaires has soared 111% in the last year as the cryptocurrency rallies",
+"description": "The number of bitcoin millionaires has soared as  the crypto rallies. There have also been six new crypto billionaires minted in the past year.",
+"url": "https://markets.businessinsider.com/news/currencies/bitcoin-millionaires-crypto-rally-cryptocurrency-etf-billionaires-sec-ethereum-wealth-2024-8",
+"urlToImage": "https://www.businessinsider.com/public/assets/logos/og-image-logo-social.png?v=2023-11",
+"publishedAt": "2024-08-27T18:50:37Z",
+"content": "As crypto rallies, the number of bitcoin millionaires has more than doubled in the last year.\r\nAccording to a new report from New World Wealth and Henley &amp; Partners, the number of bitcoin million… [+2414 chars]"
+}
+]
+}
