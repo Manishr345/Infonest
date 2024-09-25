@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import NewsItem from '../NewItem/NewsItem'
-import InfiniteScroll from 'react-infinite-scroll-component';
 
 export default function News() {
   const [article, setArticle] = useState(
@@ -60,15 +59,15 @@ export default function News() {
         ]
   )
   const [page, setPage] = useState(1);
-  useEffect(() => {
-    let Url = `https://newsapi.org/v2/everything?q=apple&from=2024-09-14&to=2024-09-14&sortBy=popularity&apiKey=89e4857c082c41e583398cde58ccad01&page=${page}&pageSize=20`;
-    fetch(Url).then((res) => {
-      res.json().then((result) => {
-        console.log(result.articles);
-        setArticle(result.articles);
-      })
-    })
-  })
+  // useEffect(() => {
+  //   let Url = `https://newsapi.org/v2/everything?q=apple&from=2024-09-14&to=2024-09-14&sortBy=popularity&apiKey=89e4857c082c41e583398cde58ccad01&page=${page}&pageSize=20`;
+  //   fetch(Url).then((res) => {
+  //     res.json().then((result) => {
+  //       console.log(result.articles);
+  //       setArticle(result.articles);
+  //     })
+  //   })
+  // })
   const previous = () => {
     setPage(page - 1);
   }
