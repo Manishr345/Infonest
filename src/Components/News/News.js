@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import NewsItem from '../NewItem/NewsItem'
 
-export default function News() {
+export default function News(props) {
   const [article, setArticle] = useState(
     [
       {
@@ -59,15 +59,15 @@ export default function News() {
         ]
   )
   const [page, setPage] = useState(1);
-  // useEffect(() => {
-  //   let Url = `https://newsapi.org/v2/everything?q=apple&from=2024-09-14&to=2024-09-14&sortBy=popularity&apiKey=89e4857c082c41e583398cde58ccad01&page=${page}&pageSize=20`;
-  //   fetch(Url).then((res) => {
-  //     res.json().then((result) => {
-  //       console.log(result.articles);
-  //       setArticle(result.articles);
-  //     })
-  //   })
-  // })
+  useEffect(() => {
+    let Url = `https://newsapi.org/v2/top-headlines?country=us&${props.cat}&apiKey=217608497f2a4221b032660bb96995f4&page=${page}&pageSize=20`;
+    fetch(Url).then((res) => {
+      res.json().then((result) => {
+        console.log(result.articles);
+        setArticle(result.articles);
+      })
+    })
+  })
   const previous = () => {
     setPage(page - 1);
   }
