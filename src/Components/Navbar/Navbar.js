@@ -1,11 +1,11 @@
 import React from 'react';
 import './Navbar.css';
-import logo from './logo.png';
+import logo from './logo.jpg';
 
 export default function Navbar(props) {
 
   return (
-    <div className='navbar flex space-x-40'>
+    props.setHome && <div className='navbar flex space-x-40'>
       <div className='h-[100%] w-20'>
         <img className='h-[100%] w-20' src={logo}></img>
       </div>
