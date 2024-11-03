@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 export default function Login(props) {
     return (
-        props.isLogin && <div className='flex ml-40 mt-10 rounded-xl w-[1000px] h-[500px]' style={{ backgroundColor: '#F8ECE6' }}>
+        props.isLogin && <div className='flex ml-40 mt-10 rounded-xl w-[1000px] h-[500px]' style={{ backgroundColor: '#F8ECE6', fontFamily: "'Signika Negative', 'sans-serif'" }}>
             <div className='w-[480px]'>
                 <img className='rounded-s-xl w-full h-full' src={logo} />
             </div>
@@ -18,7 +18,7 @@ export default function Login(props) {
                 <br />
                 <a href='/'>Forgot Password?</a>
                 <br />
-                <p className='mb-2 text-lg font-serif pl-15 mt-3'>Connect with Social Media</p>
+                <p className='mb-2 text-lg font-serif pl-15 mt-3' style={{fontFamily: "'Signika Negative', 'sans-serif'" }}>Connect with Social Media</p>
                 <button className='bg-blue-600 w-96 rounded-md ml-11 pl-3 text-white h-8 pt-1 flex mb-3'>
                     <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512"><path fill="#fbfcfe" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" /></svg>
                     <p className='ml-20'>Log in with facebook</p>

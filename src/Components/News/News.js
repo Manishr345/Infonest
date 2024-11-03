@@ -83,9 +83,9 @@ export default function News(props) {
             </div>
         </div>
         })}
-        <div className='flex space-x-[950px] ml-20 mt-20 text-white pb-10'>
+        <div className='flex space-x-[950px] ml-20 mt-20 w-[100%] text-white pb-10' style={{fontFamily: "'Signika Negative', 'sans-serif'" }}>
           <button disabled={page===1} onClick={previous} className='bg-blue-600 pl-4 pr-4'>Previous</button>
-          <button disabled={(page*20)===100} onClick={next} className='bg-blue-600 pl-4 pr-4'>Next</button>
+          <button disabled={(page*20)===100} onClick={next} className='bg-blue-600 pl-8 pr-8'>Next</button>
         </div>
     </div>
   )

@@ -10,19 +10,19 @@ export default function Signup(props) {
         props.setLogin(1);
     }
     return (
-        isSignup && <div className='flex self-center ml-40 mt-10 rounded-xl bg-gray-300 w-[1000px] h-[500px]' style={{ backgroundColor: '#F8ECE6' }}>
+        isSignup && <div className='flex self-center ml-40 mt-10 rounded-xl bg-gray-300 w-[1000px] h-[500px]' style={{ backgroundColor: '#F8ECE6', fontFamily: "'Signika Negative', 'sans-serif'" }}>
             <div className='w-[700px]'>
                 <img className='rounded-s-xl w-full h-full' src={logo} />
             </div>
             <div className='pt-10'>
-                <p className='text-left mb-2 text-lg font-serif pl-20'>Sign up</p>
+                <p className='text-left mb-2 text-lg pl-20'>Sign up</p>
                 <input className='bg-black pl-2 ml-2 w-96 text-white h-8 font-mono mb-2 rounded-md' placeholder='Create UserName' />
                 <br />
                 <input className='bg-black pl-2 ml-2 w-96 text-white h-8 font-mono mb-2 rounded-md' placeholder='Create Password' />
                 <br />
                 <input className='bg-black ml-2 w-96 text-white h-8 font-mono pl-2 mb-2 rounded-md' placeholder='Confirm Password' />
                 <Link to='/login'><button className='bg-green-900 ml-2 text-white h-8 font-mono w-96 rounded-md' onClick={doneSignup}>Continue</button></Link>
-                <p className='mb-2 text-lg font-serif pl-15 mt-3'>Connect with Social Media</p>
+                <p className='mb-2 text-lg pl-15 mt-3' style={{fontFamily: "'Signika Negative', 'sans-serif'" }}>Connect with Social Media</p>
                 <button className='bg-blue-600 w-96 rounded-md ml-20 pl-3 text-white h-8 pt-1 flex mb-3'>
                     <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512"><path fill="#fbfcfe" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" /></svg>
                     <p className='ml-20'>Sign up with facebook</p>
