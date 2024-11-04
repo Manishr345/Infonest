@@ -59,15 +59,15 @@ export default function News(props) {
         ]
   )
   const [page, setPage] = useState(1);
-  useEffect(() => {
-    let Url = `https://newsapi.org/v2/top-headlines?country=us&${props.cat}&apiKey=217608497f2a4221b032660bb96995f4&page=${page}&pageSize=20`;
-    fetch(Url).then((res) => {
-      res.json().then((result) => {
-        console.log(result.articles);
-        setArticle(result.articles);
-      })
-    })
-  })
+  // useEffect(() => {
+  //   let Url = `https://newsapi.org/v2/top-headlines?country=us&${props.cat}&apiKey=217608497f2a4221b032660bb96995f4&page=${page}&pageSize=20`;
+  //   fetch(Url).then((res) => {
+  //     res.json().then((result) => {
+  //       console.log(result.articles);
+  //       setArticle(result.articles);
+  //     })
+  //   })
+  // })
   const previous = () => {
     setPage(page - 1);
   }
@@ -75,7 +75,7 @@ export default function News(props) {
     setPage(page + 1);
   }
   return (
-    <div className='grid grid-cols-4'>
+    <div className='grid grid-cols-4 w-[100%]'>
           {article.map((element) => {
           return <div key={element.url}>
             <div>

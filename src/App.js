@@ -10,6 +10,7 @@ import {
   Routes,
   Route
 } from 'react-router-dom';
+import { click } from '@testing-library/user-event/dist/click.js';
 
 function App() {
 
@@ -52,11 +53,19 @@ function App() {
   const technology = () => {
     setCat('&category=technology');
   }
+
+  const [isBurger, setIsBurger] = useState(0);
+
+  const clicking = () => {
+    setIsBurger(!isBurger);
+    console.log(isBurger);
+  }
+
   return (
     <div className="App">
       <Router>
-        <Navbar onCat={onCat} setHome={setHome} />
-        <Categories clickCat={clickCat} business={business} entertainment={entertainment} general={general} health={health} science={science} sports={sports} technology={technology} />
+        <Navbar isBurger={isBurger} clicking={clicking} onCat={onCat} setHome={setHome} />
+        <Categories isBurger={isBurger} clicking={clicking} clickCat={clickCat} business={business} entertainment={entertainment} general={general} health={health} science={science} sports={sports} technology={technology} />
         <Signup isLogin={isLogin} setLogin={setLogin} doneLogin={doneLogin}/>
         <Routes>
           <Route exact path='/signup' element={<Signup isLogin={isLogin} setLogin={setLogin} doneLogin={doneLogin} />}/>
