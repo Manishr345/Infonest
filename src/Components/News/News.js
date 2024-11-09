@@ -59,15 +59,15 @@ export default function News(props) {
     ]
   )
   const [page, setPage] = useState(1);
-  // useEffect(() => {
-  //   let Url = `https://newsapi.org/v2/top-headlines?country=us&${props.cat}&apiKey=217608497f2a4221b032660bb96995f4&page=${page}&pageSize=20`;
-  //   fetch(Url).then((res) => {
-  //     res.json().then((result) => {
-  //       console.log(result.articles);
-  //       setArticle(result.articles);
-  //     })
-  //   })
-  // })
+  useEffect(() => {
+    let Url = `https://newsapi.org/v2/top-headlines?country=us&${props.cat}&apiKey=217608497f2a4221b032660bb96995f4&page=${page}&pageSize=20`;
+    fetch(Url).then((res) => {
+      res.json().then((result) => {
+        console.log(result.articles);
+        setArticle(result.articles);
+      })
+    })
+  })
   const previous = () => {
     setPage(page - 1);
   }
@@ -75,18 +75,20 @@ export default function News(props) {
     setPage(page + 1);
   }
   return (
-    <div className='grid pl-16 sm:pl-28 grid-cols-2 lg:grid-cols-4 w-[100%]'>
-      {article.map((element) => {
-        return <div key={element.url}>
-          <div>
-            <NewsItem title={element.title} description={element.description} url={element.url} urlToImage={element.urlToImage} />
+    <>
+      <div className='grid sm:pl-28 grid-cols-2 lg:grid-cols-4 w-[100%]'>
+        {article.map((element) => {
+          return <div key={element.url}>
+            <div className='flex justify-center mr-10'>
+              <NewsItem title={element.title} description={element.description} url={element.url} urlToImage={element.urlToImage} />
+            </div>
           </div>
-        </div>
-      })}
-      {/* <div className='flex space-x-[950px] ml-20 mt-20 w-[100%] text-white pb-10' style={{fontFamily: "'Signika Negative', 'sans-serif'" }}>
-          <button disabled={page===1} onClick={previous} className='bg-blue-600 pl-4 pr-4'>Previous</button>
-          <button disabled={(page*20)===100} onClick={next} className='bg-blue-600 pl-8 pr-8'>Next</button>
-        </div> */}
-    </div>
+        })}
+      </div>
+      <div className='flex justify-evenly space-x-[450px] lg:space-x-[950px] mt-20 w-[100%] text-white pb-10' style={{ fontFamily: "'Signika Negative', 'sans-serif'" }}>
+        <button disabled={page === 1} onClick={previous} className='bg-blue-600 rounded-lg h-[50px] w-[150px]'>Previous</button>
+        <button disabled={(page * 20) === 100} onClick={next} className='bg-blue-600 rounded-lg h-[50px] w-[150px]'>Next</button>
+      </div>
+    </>
   )
 }
