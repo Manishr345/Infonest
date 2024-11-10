@@ -4,7 +4,7 @@ import logo from './logo.jpg';
 
 export default function Navbar(props) {
   return (
-    props.setHome && <div className={`nav bg-black flex justify-evenly ${props.isBurger?'h-[200px]':'h-[70px]'}  w-[100%] sticky z-[100] space-x-40 xl:h-[70px]`}>
+    props.setHome && <div className={`nav bg-black flex justify-evenly ${props.isBurger?'h-[200px]':'h-[70px]'}  w-[100%] sticky top-0 z-[100] space-x-40 xl:h-[70px]`}>
       <div className='h-[70px] w-20'>
         <img className='h-[70px] w-20' src={logo}></img>
       </div>
